@@ -12,7 +12,7 @@ public class Main {
         for (int i = 10; i != 0; i--) {
             System.out.print(i + " ");
         }
-        System.out.println("");
+
 //        =====Task 3=====
         System.out.println("=====Task 3=====");
         for (int i = 2; i < 17; i += 2) {
@@ -58,7 +58,22 @@ public class Main {
             total1 = total1 * (100 + i) / 100;
             System.out.println("Month " + i + ": Amount of savings is " + total1 + " rub.");
         }
-
+//        =====Task 4-1=====
+        System.out.println("=====Task 4-1=====");
+        for (int i = 1; i < 31; i++) {
+            String ping = i % 3 == 0 ? " ping" : "";
+            String pong = i % 5 == 0 ? " pong" : "";
+            System.out.println(i + ":" + ping + pong);
+        }
+//        =====Task 4-2=====
+        System.out.println("=====Task 4-2=====");
+        int firstNumber = 0;
+        int secondNumber = 1;
+        for (int i = 0; i <= 4; i++) {
+            System.out.print(firstNumber + " " + secondNumber + " ");
+            firstNumber += secondNumber;
+            secondNumber += firstNumber;
+        }
 
 
 
